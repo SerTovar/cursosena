@@ -1,0 +1,29 @@
+body{
+    background-color: #d8da3d;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding-left: 5px;
+}
+h1{
+    font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+.imagen{
+    width:10%;
+    align-items: center;
+}
+ul.navegador{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.caja{
+    -webkit-border-radius: 30 px;
+    border-radius: 30px;
+    width: 90%;
+    background: silver; 
+}
