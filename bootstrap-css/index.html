@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/estilo.css" />
+    <!-- Estilos de los recursos adicionales -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="sss/sss.min.js"></script><link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+    <script>jQuery(function($) {$('.slider').sss();});</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header" id="home"><!-- Encabezado -->
+        <h1>Página de inicio</h1>
+        <p class="lead">
+          Descripción del sitio. Este es un sitio web responsive que incluye un navbar, 
+          un slider y un formulario con Javascript.
+        </p>
+        <nav class="navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Inicio</a></li>
+              <li><a href="#domicilios">Domicilios</a></li>
+              <li><a href="#formulario">Preguntas</a></li>
+              <li><a href="#redes">Nuestras redes</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div><!-- Encabezado -->
+      <div class="container-fluid">
+        <ul class="navbar">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#domicilios">Domicilios</a></li>
+          <li><a href="#formulario">Preguntas</a></li>
+          <li><a href="#redes">Nuestras redes</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="slider" style="text-align: center;"><!--Slider-->
+          <img src="images/image1.jpg" />
+          <img src="images/image2.png" />
+          <img src="images/image3.jpg" />
+          <div><img src="images/image4.jpg" class="imagen"/>
+          <span class="caption">This one has a caption</span></div>
+        </div><!--Slider-->
+      </div>
+      <!-- Editar desde aquí  -->
+      <div id="domicilos" class="section">
+        <address>
+          Número de contacto: 1 23 45 67<br>
+          Preguntar por: Lalo Lopez<br>
+          Dirección: Calle Falsa 123<br>
+        </address>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 bg-warning">
+          1 of 4
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 bg-success">2 of 4</div>
+        <div class="col-xs-12 col-sm-6 col-md-3 bg-warning">3 of 4</div>
+        <div class="col-xs-12 col-sm-6 col-md-3 bg-success">4 of 4</div>
+      </div>
+      <div id="formulario" class="section">
+        <form name="form1" method="post" onsubmit="return validarForma(this);">
+          <h2>Diligencie la información<h2> 
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <label>Nombre Completo</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <input type="text" name="usuario" onfocus="this.select();"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <label>Email</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <input type="email" name="correo" onfocus="this.select();"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <labeñ>Teléfono</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <input type="number" name="telefono" onfocus="this.select();"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <label>Género</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <input type="checkbox" id="male" name="genero" value="male">Masculino<br>
+              <input type="checkbox" id="female" name="genero" value="female">Femenino<br>
+              <input type="checkbox" id="other" name="genero" value="other">Otro<br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <labeñ>Pregunta</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <textarea name="pregunta" onfocus="this.select();">
+              </textarea>
+            </div>
+          </div>
+          <div class="botonEnviar">
+            <button type="submit" class="btn btn-default" href="google.com">Enviar</button>
+          </div>    
+        </form>
+      </div>
+      <!-- Hasta aquí modificaremos -->
+      <div id="redes" class="section">
+        <a href="https://www.instagram.com" target="blank"><img src="images/instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com" target="blank"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="https://www.twitter.com" target="blank"><img src="images/twitter.png" alt="twitter"></a>
+        <a href="https://www.youtube.com" target="blank"><img src="images/youtube.png" alt="youtube"></a>    
+        <a href="https://www.whatsapp.com" target="blank"><img src="images/whatsapp.png" alt="whatsapp"></a>
+      </div>
+    </div>
+
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerías de plugins -->
+
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/curso.js"></script>
+  </body>
+</html>
